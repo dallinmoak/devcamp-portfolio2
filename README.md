@@ -6,5 +6,3 @@
 ### current features:
  * a blog scaffold
  * that's pretty much it
-
-here is a test change
