@@ -44,8 +44,8 @@ Portfolio.create!(
   title: "Portfolio Item 9",
   subtitle: "Angular",
   body: "Lorem ipsum 9 dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis magna. Aenean congue varius leo. Curabitur non enim non massa aliquet consequat. Quisque tellus purus, eleifend at elementum vehicula, tristique non ex. Cras consectetur est ac metus fringilla sagittis. Curabitur ullamcorper ac eros non vestibulum. Donec justo nisl, suscipit at dapibus eu, posuere at lorem. Phasellus non venenatis metus. Nam volutpat, purus sit amet feugiat porta, lectus urna sollicitudin massa, vestibulum fermentum diam enim nec nisi.",
-  main_image: "http://placehold.it/700x400",
-  thumb_image: "http://placehold.it/350x200"
+  main_image: "http://placehold.it/600x400",
+  thumb_image: "http://placehold.it/300x200"
 )
 
 puts "9 portfolio items created"
