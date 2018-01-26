@@ -5,4 +5,5 @@
 ***
 ### current features:
  * a blog scaffold
- * that's pretty much it
+ * portfolio feature
+ * skills with values
