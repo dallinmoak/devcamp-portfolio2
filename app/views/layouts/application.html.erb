@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DevcampPortfolio2</title>
+    <title><%= @page_title %> | Devcamp Portfolio </title>
     <%= csrf_meta_tags %>
-
+    <meta name='keywords' content='<%= @seo_keywords %>' />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div>
+      <div><%= link_to "home", root_path %> </div>
+      <div><%= link_to "about", about_path %> </div>
+      <div><%= link_to "contact", contact_path %> </div>
+<%#*      <div>%><%#= link_to "Portfolios", portfolios_path %><%#*</div>%>
+<%#*      <div>%><%#= link_to "Blog posts", blogs_path %><%#*</div>%>
+    </div>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <% if current_user.class == User %>
@@ -17,6 +24,8 @@
       <%= link_to "login", new_user_session_path  %>
       <%= link_to "register", new_user_registration_path  %>
     <% end %>
+
+
     <%= yield %>
 
     <hr>
