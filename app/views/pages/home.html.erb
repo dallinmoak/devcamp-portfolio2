@@ -1,7 +1,10 @@
 <h1>Hi, <%= current_user.first_name %> </h1>
 <p>welcome to this page</p>
 
-<h2>Blog posts:</h2>
+<h2><%= link_to "Blog posts:", blogs_path %></h2>
+<%= @posts.inspect %>
+
+<h2><%= link_to "Portfolio:", portfolios_path %></h2>
 <%= @posts.inspect %>
 
 <h2>Skills:</h2>
