@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/dallinmoak/dmoak_practice_gem
+  revision: ab1e54c6cec7ff3563dc7a00d6ed5c7f310b93fe
+  specs:
+    dmoak_practice_gem (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -187,6 +193,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise (~> 4.4, >= 4.4.1)
+  dmoak_practice_gem!
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
   jquery-rails
