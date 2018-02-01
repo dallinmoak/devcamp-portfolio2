@@ -55,3 +55,10 @@ gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.
 
 #devise
 gem 'devise', '~> 4.4', '>= 4.4.1'
+
+#bootstrap
+gem 'bootstrap', '~> 4.0.0'
+
+gem 'jquery-rails'
+
+gem 'dmoak_practice_gem', '~> 0.1.1'

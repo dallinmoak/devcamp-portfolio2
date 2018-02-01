@@ -18,4 +18,7 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    DmoakPracticeGem::Renderer.copyright 'Dallin Moak', 'copyright message'
+  end
 end
