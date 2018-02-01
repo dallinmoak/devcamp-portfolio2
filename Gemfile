@@ -62,3 +62,6 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'jquery-rails'
 
 gem 'dmoak_practice_gem', '~> 0.1.1'
+
+#petergate for authorizing users for different tasks
+gem 'petergate', '~> 1.8', '>= 1.8.1'
