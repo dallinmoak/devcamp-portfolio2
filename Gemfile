@@ -61,4 +61,4 @@ gem 'bootstrap', '~> 4.0.0'
 
 gem 'jquery-rails'
 
-gem 'dmoak_practice_gem', git: 'https://github.com/dallinmoak/dmoak_practice_gem'
+gem 'dmoak_practice_gem', '~> 0.1.1'
