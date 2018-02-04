@@ -11,7 +11,6 @@ module ApplicationHelper
   end
 
   def source_helper (layout_name)
-    ("<hr>".html_safe) +
     if session[:source]
       greeting = "thanks for visiting me from #{session[:source]} on #{layout_name}."
       content_tag(:p, greeting, class: "source-greeting")
