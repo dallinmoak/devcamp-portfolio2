@@ -15,8 +15,8 @@ puts "3 topics created"
 
 10.times do |blog|
   Blog.create!(
-    title: "Post \##{blog}",
-    body: "Lorem ipsum #{blog} dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis magna. Aenean congue varius leo. Curabitur non enim non massa aliquet consequat. Quisque tellus purus, eleifend at elementum vehicula, tristique non ex. Cras consectetur est ac metus fringilla sagittis. Curabitur ullamcorper ac eros non vestibulum. Donec justo nisl, suscipit at dapibus eu, posuere at lorem. Phasellus non venenatis metus. Nam volutpat, purus sit amet feugiat porta, lectus urna sollicitudin massa, vestibulum fermentum diam enim nec nisi.",
+    title: "Post \##{blog +1}",
+    body: "Lorem ipsum #{blog +1} dolor sit amet, consectetur adipiscing elit. Quisque nec iaculis magna. Aenean congue varius leo. Curabitur non enim non massa aliquet consequat. Quisque tellus purus, eleifend at elementum vehicula, tristique non ex. Cras consectetur est ac metus fringilla sagittis. Curabitur ullamcorper ac eros non vestibulum. Donec justo nisl, suscipit at dapibus eu, posuere at lorem. Phasellus non venenatis metus. Nam volutpat, purus sit amet feugiat porta, lectus urna sollicitudin massa, vestibulum fermentum diam enim nec nisi.",
     topic_id: Topic.last.id
   )
 end
