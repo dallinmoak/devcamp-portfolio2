@@ -5,6 +5,10 @@ class Portfolio < ApplicationRecord
 
   include Placeholder
 
+  def self.by_position
+    order("position ASC")
+  end
+
   validates_presence_of :title, :body, :main_image, :thumb_image
 
   after_initialize :set_defaults
