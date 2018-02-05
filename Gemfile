@@ -65,3 +65,7 @@ gem 'dmoak_practice_gem', '~> 0.1.1'
 
 #petergate for authorizing users for different tasks
 gem 'petergate', '~> 1.8', '>= 1.8.1'
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3'
+
+gem 'kaminari', '~> 1.1', '>= 1.1.1'

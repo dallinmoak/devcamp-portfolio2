@@ -1,17 +1,16 @@
 module ApplicationHelper
 
-  def login_helper
+  def login_helper style = ''
     if current_user.class == User
-      link_to "logout", destroy_user_session_path, method: :delete
+      link_to "logout", destroy_user_session_path, method: :delete, class: style
     else
-      (link_to "login", new_user_session_path) +
-      "<br>".html_safe +
-      (link_to "register", new_user_registration_path)
+      (link_to "login", new_user_session_path, class: style) +
+      "".html_safe +
+      (link_to "register", new_user_registration_path, class: style)
     end
   end
 
   def source_helper (layout_name)
-    ("<hr>".html_safe) +
     if session[:source]
       greeting = "thanks for visiting me from #{session[:source]} on #{layout_name}."
       content_tag(:p, greeting, class: "source-greeting")
@@ -21,4 +20,44 @@ module ApplicationHelper
   def copyright_generator
     DmoakPracticeGem::Renderer.copyright 'Dallin Moak', 'copyright message'
   end
+
+  def nav_items
+    [
+      {
+        url: root_path,
+        title: "Home"
+      },
+      {
+        url: about_path,
+        title: "About"
+      },
+      {
+        url: contact_path,
+        title: "Contacts"
+      },
+      {
+        url: blogs_path,
+        title: "Blogs"
+      },
+      {
+        url: portfolios_path,
+        title: "Portfolios"
+      }
+    ]
+  end
+
+  def nav_helper(style, tag_type)
+    nav_links = ''
+
+    nav_items.each do |item|
+      nav_links << "<#{tag_type}><a href='#{item[:url]}' class='#{style} #{active item[:url]}'>#{item[:title]}</a></#{tag_type}>"
+    end
+
+    nav_links.html_safe
+  end
+
+  def active path
+    "active" if current_page? path
+  end
+
 end

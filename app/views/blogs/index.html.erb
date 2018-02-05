@@ -1,25 +1,7 @@
-<p id="notice"><%= notice %></p>
+<div class="col-sm-8 blog-main">
 
-<h1>Blogs</h1>
+  <%= paginate @blogs %>
+  <%= render @blogs %>
+  <%= paginate @blogs %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Date</th>
-      <th>Body</th>
-      <th colspan="4"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <!--
-    This summons a magic rails fairy that loops through everything in the @blogs collection and renders the stuff on the partial file _blog.html.erb for each item in that collection. Could do this by hand if desired.
-    -->
-    <%= render @blogs %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
+</div>
