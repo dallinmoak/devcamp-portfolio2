@@ -17,19 +17,18 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
+          <div id="background"></div>
+            <%= render "shared/application_nav", location: 'top' %>
 
-          <%= render "shared/application_nav", location: 'top' %>
+            <p class="notice"><%= notice %></p>
+            <p class="alert"><%= alert %></p>
 
-          <p class="notice"><%= notice %></p>
-          <p class="alert"><%= alert %></p>
+            <%= yield %>
 
-          <%= yield %>
+            <%#= copyright_generator %>
+            <%= render "shared/application_footer" %>
 
-          <%#= copyright_generator %>
-          <%= render "shared/application_footer" %>
-
-          <%= source_helper "application"%>
-
+            <%= source_helper "application"%>
         </div>
       </div>
     </div>
