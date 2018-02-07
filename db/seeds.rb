@@ -58,3 +58,12 @@ puts "9 portfolio items created"
 end
 
 puts '3 technologies created'
+
+User.create!(
+  name:"Dallin Moak", 
+  email:"a@b.c", 
+  password:"asdfasdf", 
+  password_confirmation:"asdfasdf", 
+  role:"site_admin"
+  )
+puts "1 admin created"
