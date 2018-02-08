@@ -79,3 +79,5 @@ gem 'carrierwave-aws', '~> 1.3'# "Second of 4 gems for photo uploading"
 gem 'mini_magick', '~> 4.8' # "Third of 4 gems for photo uploading"
 
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1' # "Fourth of 4 gems for photo uploading, also used as the secrets file for the aws keys etc"
+
+gem 'cocoon', '~> 1.2', '>= 1.2.11' # helps with adding dynamic forms

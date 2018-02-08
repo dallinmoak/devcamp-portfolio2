@@ -14,7 +14,11 @@
         <p><%= tech.name %></p>
       <% end %>
       <hr>
-      <%= link_to "See all", portfolios_path %>
+      <% if logged_in?(:site_admin)%>
+        <div class='col-md-12'>
+          <%= link_to "edit", edit_portfolio_path(@portfolio_item), class: "btn btn-warning" %>
+        </div>
+        <% end %>
     </div>
   </div>
 </div>
