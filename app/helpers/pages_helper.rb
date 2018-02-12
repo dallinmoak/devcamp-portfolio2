@@ -1,6 +1,6 @@
 module PagesHelper
   def twitter_parser tweet
-    regex = %r{
+    url_regex = %r{
       \b
       (
         (?: [a-z][\w-]+:
@@ -18,7 +18,7 @@ module PagesHelper
       )
     }ix
 
-    tweet.gsub(regex) do |url|
+    tweet.gsub(url_regex) do |url|
       "<a href='#{url}' target='_blank'>#{url}</a>"
     end 
   end
