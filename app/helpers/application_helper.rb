@@ -36,6 +36,10 @@ module ApplicationHelper
         title: "Contacts"
       },
       {
+        url: tech_news_path,
+        title: "Tech"
+      },
+      {
         url: blogs_path,
         title: "Blogs"
       },

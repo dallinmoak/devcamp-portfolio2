@@ -84,7 +84,7 @@ body {
   border-bottom-color: #fff;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 60em) {
   .masthead-brand {
     float: left;
   }
@@ -149,10 +149,24 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('background.jpg');
+  // background: image-url('background.jpg');
+  background-color: #4e6c84;
   background-size: cover;
 }
 
 .app-footer{
   color:white;
+}
+
+.tweeters{
+  color: #000000;
+  margin: 20px;
+}
+
+.tweeters a{
+  color: #000000;
+}
+
+.tweeters > .card{
+  padding: 30px;
 }
