@@ -20,6 +20,7 @@
 
 //= require cocoon
 //= require gritter
+//= require cable
 
 //= require rails-ujs
 //= require turbolinks

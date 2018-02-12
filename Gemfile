@@ -49,39 +49,24 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
 #friendly
 gem 'friendly_id', '~> 5.1.0' # "works with changing our id's in our URL are strings instead of numbers, we used it for our blog titles"
-
 #devise
 gem 'devise', '~> 4.4', '>= 4.4.1'# " Used to create users and authentication for our website"
-
 #bootstrap
 gem 'bootstrap', '~> 4.0.0' # "Provides bootstrap styles, requires some additions to application.js and application.scss before it will function. Also requires Jquery, which is not provided by default after rails 5.1"
-
 gem 'jquery-rails' # "Needed for bootstrap if trying to use after rails 5.1"
-
 gem 'dmoak_practice_gem', '~> 0.1.1' # "The custom gem for adding the copyright message"
-
 #petergate for authorizing users for different tasks
 gem 'petergate', '~> 1.8', '>= 1.8.1' # "Works with devise to provide authorization and admins etc,"
-
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.3' # "Working with fonts for styles etc"
-
-gem 'kaminari', '~> 1.1', '>= 1.1.1'  # "Is used to help provide pagination"
-
+gem 'kaminari', '~> 1.1', '>= 1.1.1'  # "Is used to help provide pagination
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1' # "We brought this in to help with our drag and drop for portfolios used with html.sortable.js that we imported by hand "
-
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'  # " First of 4 gems for photo uploading"
-
 gem 'carrierwave-aws', '~> 1.3'# "Second of 4 gems for photo uploading"
-
 gem 'mini_magick', '~> 4.8' # "Third of 4 gems for photo uploading"
-
 gem 'dotenv-rails', '~> 2.2', '>= 2.2.1' # "Fourth of 4 gems for photo uploading, also used as the secrets file for the aws keys etc"
-
 gem 'cocoon', '~> 1.2', '>= 1.2.11' # helps with adding dynamic forms
-
 gem 'gritter', '~> 1.2' # custom alert messages. requires j-query
-
 gem 'twitter', '~> 6.2' #for tweeting
+gem 'redis', '~> 3.3', '>=3.3.3' #a "no-sql" database we used for doing live comments
