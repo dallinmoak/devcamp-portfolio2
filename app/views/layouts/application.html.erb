@@ -17,26 +17,22 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          <!-- <div id="backgrounraod"></div> -->
-            <%= video_tag(
-              '3-candle-timelapse.mov',
-              id: 'background',
-              autoplay: true,
-              loop: true,
-              muted: true,
-              poster: 'background.jpg'
-              )%>
-            <%= render "shared/application_nav", location: 'top' %>
+          <%= video_tag(
+            '3-candle-timelapse.mov',
+            id: 'background',
+            autoplay: true,
+            loop: true,
+            muted: true,
+            poster: 'background.jpg')%>
 
-            <p class="notice"><%= notice %></p>
-            <p class="alert"><%= alert %></p>
+          <%= render "shared/application_nav", location: 'top' %>
 
-            <%= yield %>
+          <%= yield %>
 
-            <%#= copyright_generator %>
-            <%= render "shared/application_footer" %>
+          <%= render "shared/application_footer" %>
+          <%= alerts %>
+          <%= source_helper "application"%>
 
-            <%= source_helper "application"%>
         </div>
       </div>
     </div>
