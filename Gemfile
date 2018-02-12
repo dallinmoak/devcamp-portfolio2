@@ -83,3 +83,5 @@ gem 'dotenv-rails', '~> 2.2', '>= 2.2.1' # "Fourth of 4 gems for photo uploading
 gem 'cocoon', '~> 1.2', '>= 1.2.11' # helps with adding dynamic forms
 
 gem 'gritter', '~> 1.2' # custom alert messages. requires j-query
+
+gem 'twitter', '~> 6.2' #for tweeting
