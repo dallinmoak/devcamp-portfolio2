@@ -8,7 +8,7 @@ module SocialTool
     end
 
     client.search("to:HeardAtBYU OR #heardatbyu", result_type: 'mixed').take(6).collect do |tweet|
-      "@#{tweet.user.screen_name}: #{tweet.text}"
+      "<p>@#{tweet.user.screen_name} </p> #{tweet.text}"
     end
   end
 end
