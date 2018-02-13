@@ -31,7 +31,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  // background-color: #333;
+  background-color: #4e6c84;
 }
 
 body {
@@ -149,8 +149,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  // background: image-url('background.jpg');
-  background-color: #4e6c84;
+  background: image-url('background.jpg');
   background-size: cover;
 }
 
