@@ -18,6 +18,15 @@
       <div class="site-wrapper-inner">
         <div class="cover-container">
           
+          <%= video_tag(
+              '3-candle-timelapse.mov',
+              id: 'background',
+              autoplay: true,
+              loop: true,
+              muted: true,
+              poster: 'background.png'
+            )
+            %>
 
           <%= render "shared/application_nav", location: 'top' %>
 
