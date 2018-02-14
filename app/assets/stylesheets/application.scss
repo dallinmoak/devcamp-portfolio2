@@ -31,7 +31,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #4e6c84;
+//   background-color: #4e6c84;
 }
 
 body {
@@ -46,9 +46,29 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
-.cover-container {
-  max-width: 55em;
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
+          box-shadow: inset 0 0 5rem rgba(0,0,0,.5);
 }
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 2rem;
+}
+
 
 
 /*
@@ -111,6 +131,40 @@ body {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+/*
+ * Affix and center
+ */
+
+ @media (min-width: 40em) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 62em) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 70rem;
+  }
 }
 
 /* custom styles */
