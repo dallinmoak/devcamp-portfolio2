@@ -70,3 +70,5 @@ gem 'cocoon', '~> 1.2', '>= 1.2.11' # helps with adding dynamic forms
 gem 'gritter', '~> 1.2' # custom alert messages. requires j-query
 gem 'twitter', '~> 6.2' #for tweeting
 gem 'redis', '~> 3.3', '>=3.3.3' #a "no-sql" database we used for doing live comments
+gem 'redcarpet', '~> 3.4' #parses markdown
+gem 'coderay', '~> 1.1', '>= 1.1.2' #syntax hilighting 
