@@ -67,3 +67,12 @@ User.create!(
   role:"site_admin"
   )
 puts "1 admin created"
+
+User.create!(
+  email: "a@a.c",
+  password: "asdfasdf",
+  password_confirmation: "asdfasdf",
+  name: "Regular User",
+)
+
+puts "1 regular user created"
