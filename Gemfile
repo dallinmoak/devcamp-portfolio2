@@ -72,3 +72,5 @@ gem 'twitter', '~> 6.2' #for tweeting
 gem 'redis', '~> 3.3', '>=3.3.3' #a "no-sql" database we used for doing live comments
 gem 'redcarpet', '~> 3.4' #parses markdown
 gem 'coderay', '~> 1.1', '>= 1.1.2' #syntax hilighting 
+
+ruby "2.4.2"
