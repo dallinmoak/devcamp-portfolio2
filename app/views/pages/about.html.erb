@@ -6,8 +6,19 @@
 
     <div class="row">
       <div class="col-md-4">
-        <!-- <img src="https://i.imgur.com/RAdfPHD.jpg" width="300" alt="picture"> -->
         <%= image_tag "about_pic.jpg", width: 300, alt: "profile pic" %>
+        <div class='skills'>
+          <% @skills.each do |skill| %> 
+            <div class='skill'>
+              <h4><%= skill.title %></h4>
+              <div class='progress'>
+                <div class='progress-bar progress-bar-striped bg-warning' role='progressbar' aria-valuenow='<%= skill.percent_used %>' aria-valuemax='100' style='width: <%= skill.percent_used %>%'>
+                  <%= skill.percent_used %>% 
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
       <div class="col-md-8">
         <p>I literally have </p>
@@ -35,26 +46,25 @@
         </button>
 
         <div class='collapse' id='education'>
-          <div class="card card-body">
+          <div class="card card-body resume-item">
             school 1
           </div>
-          <div class="card card-body">
+          <div class="card card-body resume-item">
             school 2
           </div>
-          <div class="card card-body">
+          <div class="card card-body resume-item">
             school 3
           </div>
         </div>
 
-
         <div class='collapse' id='jobHistory'>
-          <div class="card card-body">
+          <div class="card card-body resume-item">
             my jobs
           </div>
-          <div class="card card-body">
+          <div class="card card-body resume-item">
             my jobs
           </div>
-          <div class="card card-body">
+          <div class="card card-body resume-item">
             my jobs
           </div>
         </div>
