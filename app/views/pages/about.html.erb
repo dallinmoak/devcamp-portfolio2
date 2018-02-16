@@ -1,16 +1,68 @@
-<h1>About Me</h1>
+<div class='app-card-container'>
+  <div class='card'>
+    <h1>About Me</h1>
 
-<hr>
+    <hr>
 
-<div class="row">
-  <div class="col-md-4">
-    <!-- <img src="https://i.imgur.com/RAdfPHD.jpg" width="300" alt="picture"> -->
-    <%= image_tag "about_pic.jpg", width: 300, alt: "profile pic" %>
-  </div>
-  <div class="col-md-8">
-    <p>I literally have </p>
-    <p>no idea what i'm doing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper hendrerit lectus vitae scelerisque. Nam in libero at lorem rhoncus gravida vel euismod massa. Nunc quam mi, sagittis vitae mauris et, scelerisque varius odio. Nulla sollicitudin dui ac turpis tempor pulvinar. Quisque vel laoreet nulla. Quisque odio sem, maximus eget dui eget, iaculis congue neque. Fusce vel lectus nulla. Nunc non consequat felis, vitae aliquam dui. Etiam interdum sodales mauris sed vulputate. Donec posuere posuere sem, a congue magna elementum et. Fusce sodales volutpat volutpat. Pellentesque rhoncus consectetur ornare. Etiam posuere bibendum imperdiet. Nullam placerat varius quam sit amet rhoncus. Quisque molestie nulla sollicitudin hendrerit accumsan. Vivamus tincidunt ante sit amet orci sollicitudin, quis gravida felis hendrerit. Duis luctus mauris justo, ac dignissim metus efficitur vel. In eu dignissim nisl. Praesent dignissim, quam venenatis consequat dignissim, magna lorem auctor augue, sodales facilisis ex leo nec sem. Sed venenatis nisi massa, pretium vulputate augue viverra a. In at est sed enim volutpat ornare sit amet vehicula est. Sed eleifend felis nec purus ornare fermentum. Integer pretium ex eget lacus fringilla, ac consequat erat aliquam. Sed imperdiet lectus tortor, sed egestas augue faucibus vel. Donec bibendum nisl ac ultricies dapibus.</p>
+    <div class="row">
+      <div class="col-md-4">
+        <!-- <img src="https://i.imgur.com/RAdfPHD.jpg" width="300" alt="picture"> -->
+        <%= image_tag "about_pic.jpg", width: 300, alt: "profile pic" %>
+      </div>
+      <div class="col-md-8">
+        <p>I literally have </p>
+        <p>no idea what i'm doing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper hendrerit lectus vitae scelerisque. Nam in libero at lorem rhoncus gravida vel euismod massa. Nunc quam mi, sagittis vitae mauris et, scelerisque varius odio. Nulla sollicitudin dui ac turpis tempor pulvinar. Quisque vel laoreet nulla. Quisque odio sem, maximus eget dui eget, iaculis congue neque. Fusce vel lectus nulla. Nunc non consequat felis, vitae aliquam dui. Etiam interdum sodales mauris sed vulputate. Donec posuere posuere sem, a congue magna elementum et. Fusce sodales volutpat volutpat. Pellentesque rhoncus consectetur ornare. Etiam posuere bibendum imperdiet. Nullam placerat varius quam sit amet rhoncus. Quisque molestie nulla sollicitudin hendrerit accumsan. Vivamus tincidunt ante sit amet orci sollicitudin, quis gravida felis hendrerit. Duis luctus mauris justo, ac dignissim metus efficitur vel. In eu dignissim nisl. Praesent dignissim, quam venenatis consequat dignissim, magna lorem auctor augue, sodales facilisis ex leo nec sem. Sed venenatis nisi massa, pretium vulputate augue viverra a. In at est sed enim volutpat ornare sit amet vehicula est. Sed eleifend felis nec purus ornare fermentum. Integer pretium ex eget lacus fringilla, ac consequat erat aliquam. Sed imperdiet lectus tortor, sed egestas augue faucibus vel. Donec bibendum nisl ac ultricies dapibus.</p>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#jobHistory"
+          aria-expanded="false"
+          aria-controls="jobHistory"
+        >
+          Job History
+        </button>
+
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#education"
+          aria-expanded="false"
+          aria-controls="education"
+        >        
+          education
+        </button>
+
+        <div class='collapse' id='education'>
+          <div class="card card-body">
+            school 1
+          </div>
+          <div class="card card-body">
+            school 2
+          </div>
+          <div class="card card-body">
+            school 3
+          </div>
+        </div>
+
+
+        <div class='collapse' id='jobHistory'>
+          <div class="card card-body">
+            my jobs
+          </div>
+          <div class="card card-body">
+            my jobs
+          </div>
+          <div class="card card-body">
+            my jobs
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
 </div>
+
 
 
