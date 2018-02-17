@@ -54,7 +54,6 @@ gem 'friendly_id', '~> 5.1.0' # "works with changing our id's in our URL are str
 #devise
 gem 'devise', '~> 4.4', '>= 4.4.1'# " Used to create users and authentication for our website"
 #bootstrap
-gem 'warden', '~> 1.2', '>= 1.2.7' #this helps devise do its thing, it's explicitly called here for my production server(heroku)
 gem 'bootstrap', '~> 4.0.0' # "Provides bootstrap styles, requires some additions to application.js and application.scss before it will function. Also requires Jquery, which is not provided by default after rails 5.1"
 gem 'jquery-rails' # "Needed for bootstrap if trying to use after rails 5.1"
 gem 'dmoak_practice_gem', '~> 0.1.1' # "The custom gem for adding the copyright message"
