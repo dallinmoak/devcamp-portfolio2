@@ -76,10 +76,10 @@ module ApplicationHelper
   end
 
   def about_header_helper
-    "about_nav".html_safe if current_page?('/about')
+    "about_nav".html_safe unless current_page?('/')
   end
 
   def floaty_footer_helper
-    "floaty-footer".html_safe if current_page?('/about')
+    "floaty-footer".html_safe unless current_page?('/')
   end
 end
