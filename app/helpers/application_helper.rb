@@ -74,4 +74,12 @@ module ApplicationHelper
   def alert_generator message
     js add_gritter(message, title: "Dallin notification", sticky: false)
   end
+
+  def about_header_helper
+    "about_nav".html_safe if current_page?('/about')
+  end
+
+  def floaty_footer_helper
+    "floaty-footer".html_safe if current_page?('/about')
+  end
 end
